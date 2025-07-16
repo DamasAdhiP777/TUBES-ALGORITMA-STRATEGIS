@@ -1,11 +1,9 @@
 import heapq
 
 def dijkstra(graph, start):
-    # Inisialisasi semua jarak ke ∞, kecuali simpul awal (0)
     distances = {node: float('inf') for node in graph}
     distances[start] = 0
 
-    # Priority queue untuk pemrosesan simpul
     pq = [(0, start)]
     visited = set()
 
@@ -23,7 +21,6 @@ def dijkstra(graph, start):
 
     return distances
 
-# ===== INPUT MANUAL =====
 graph = {}
 nodes = input("Masukkan semua simpul :").split()
 
@@ -36,13 +33,16 @@ for node in nodes:
         connections.append((neighbor, weight))
     graph[node] = connections
 
-# Input simpul awal
 start_node = input("\nMasukkan simpul awal untuk Dijkstra: ").strip()
 
-# ===== JALANKAN DIJKSTRA =====
 result = dijkstra(graph, start_node)
 
-# ===== TAMPILKAN HASIL =====
+print("\n======================================")
+print("Nama  : Damas Adhi Prasetyo")
+print("NIM   : 2353377")
+print("Kelas : 4D")
+print("======================================")
+print("\nItem yang diambil (berat, profit):")
 print("\nHasil Akhir Jarak Minimum dari Simpul", start_node, ":\n")
 for node in sorted(graph.keys()):
     distance = result.get(node, float('inf'))
