@@ -6,7 +6,6 @@ def quick_sort(arr):
     right = [x for x in arr[1:] if x >= pivot]
     return quick_sort(left) + [pivot] + quick_sort(right)
 
-# Input manual dari user
 n = int(input("Masukkan jumlah elemen: "))
 arr = []
 
@@ -20,5 +19,10 @@ print(arr)
 
 sorted_arr = quick_sort(arr)
 
+print("\n======================================")
+print("Nama  : Damas Adhi Prasetyo")
+print("NIM   : 2353377")
+print("Kelas : 4D")
+print("======================================")
 print("\nArray setelah Quick Sort:")
 print(sorted_arr)
