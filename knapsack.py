@@ -30,7 +30,7 @@ total_profit, selected_items = knapsack_greedy(items, capacity)
 
 print("\n======================================")
 print("Nama  : Damas Adhi Prasetyo")
-print("NIM   : 2353377")
+print("NIM   : 23533777")
 print("Kelas : 4D")
 print("======================================")
 print("\nItem yang diambil (berat, profit):")
