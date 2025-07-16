@@ -28,8 +28,13 @@ capacity = float(input("Masukkan kapasitas maksimum knapsack: "))
 
 total_profit, selected_items = knapsack_greedy(items, capacity)
 
+print("\n======================================")
+print("Nama  : Damas Adhi Prasetyo")
+print("NIM   : 2353377")
+print("Kelas : 4D")
+print("======================================")
 print("\nItem yang diambil (berat, profit):")
 for item in selected_items:
     print(f"({item.weight}, {item.profit})")
 
-print("Total Profit:", total_profit)
+print("\nTotal Profit:", total_profit)
