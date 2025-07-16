@@ -16,7 +16,6 @@ def knapsack_greedy(items, capacity):
             taken.append(item)
     return total_profit, taken
 
-# Input manual dari pengguna
 n = int(input("Masukkan jumlah item: "))
 items = []
 
@@ -27,10 +26,8 @@ for i in range(n):
 
 capacity = float(input("Masukkan kapasitas maksimum knapsack: "))
 
-# Proses Knapsack
 total_profit, selected_items = knapsack_greedy(items, capacity)
 
-# Output hasil
 print("\nItem yang diambil (berat, profit):")
 for item in selected_items:
     print(f"({item.weight}, {item.profit})")
