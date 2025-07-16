@@ -21,7 +21,7 @@ sorted_arr = quick_sort(arr)
 
 print("\n======================================")
 print("Nama  : Damas Adhi Prasetyo")
-print("NIM   : 2353377")
+print("NIM   : 23533777")
 print("Kelas : 4D")
 print("======================================")
 print("\nArray setelah Quick Sort:")
